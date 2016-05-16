@@ -1,0 +1,2 @@
+[16-May-2016 20:40:55] PHP Fatal error:  Call to undefined function  http_response_code() in /home/rapidde/public_html/geoscan/register/index.php on line 24
+[16-May-2016 20:42:37] PHP Fatal error:  Call to undefined function  http_response_code() in /home/rapidde/public_html/geoscan/register/index.php on line 24

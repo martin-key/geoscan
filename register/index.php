@@ -1,16 +1,17 @@
 <?php
 include '../mysql.php';
-$json = $_SERVER['HTTP_DATA'];
+//$json = $_SERVER['HTTP_DATA'];
+$json = file_get_contents('php://input');
 $credentials = json_decode($json, true);
-if($credentials != NULL && $credentials['username'] != NULL && $credentials['password'] != NULL)
+if($credentials['email'] != NULL && $credentials['password'] != NULL)
 {
 	$db = new DbConnect();
-	$query = "Insert into users(email, password) values(:username, :password)";
+	$query = "Insert into users(email, password, username, name, familyName) values(:email, :password, :username, :name, :familyName)";
 	$credentials['password'] = password_hash($credentials['password'], PASSWORD_BCRYPT);
 	if($db->execute_query($query, $credentials))
 	{
 		http_response_code(200);
-		echo "User ".$credentials['username']." created";
+		echo "User ".$credentials['email']." created";
 	}
 	else
 	{

@@ -13,11 +13,11 @@ class DbConnect
 		$this->dbConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	}
 	
-	function authorization_check($username, $password)
+	function authorization_check($email, $password)
 	{
 		$query = 'Select email, password from users where email = :email';
 		$stmt = $this->dbConnection->prepare($query);
-		$params = array('email' => $username);
+		$params = array('email' => $email);
 		$stmt->execute($params);
 		$result = $stmt->fetch(PDO::FETCH_ASSOC);
 		if(is_array($result) && $result && password_verify($password, $result['password']))
@@ -28,8 +28,35 @@ class DbConnect
 		
 	}
 	
+	function execute_query($query, $params, $isSelect)
+	{
+		$stmt = $this->dbConnection->prepare($query);
+		if($stmt->execute($params))
+		{
+			//echo "query executed";
+			if($isSelect ===true)
+			{
+				$fetch = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				$result = json_encode($fetch);
+			}
+			else
+			{
+				$result = true;
+			}
+		}
+		else
+		{
+			//echo "query not executed";
+			$result = false;
+			echo $stmt->errorinfo();
+		}
+		return $result;
+	}
+	
+	
 	
 	
 	
 }
+	
 ?>
