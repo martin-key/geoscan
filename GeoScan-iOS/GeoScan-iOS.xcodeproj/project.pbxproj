@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19E24B4C1CEB93DB00DE36E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E24B4B1CEB93DB00DE36E0 /* main.m */; };
+		19E24B4F1CEB93DB00DE36E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E24B4E1CEB93DB00DE36E0 /* AppDelegate.m */; };
+		19E24B581CEB93DB00DE36E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B561CEB93DB00DE36E0 /* Main.storyboard */; };
+		19E24B5A1CEB93DB00DE36E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B591CEB93DB00DE36E0 /* Assets.xcassets */; };
+		19E24B5D1CEB93DB00DE36E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B5B1CEB93DB00DE36E0 /* LaunchScreen.storyboard */; };
+		19E24B681CEB963400DE36E0 /* Statistics.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B651CEB963400DE36E0 /* Statistics.png */; };
+		19E24B691CEB963400DE36E0 /* Statistics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B661CEB963400DE36E0 /* Statistics@2x.png */; };
+		19E24B6A1CEB963400DE36E0 /* Statistics@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B671CEB963400DE36E0 /* Statistics@3x.png */; };
+		19E24B6C1CEB964F00DE36E0 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B6B1CEB964F00DE36E0 /* home.png */; };
+		19E24B6E1CEB965800DE36E0 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B6D1CEB965800DE36E0 /* home@2x.png */; };
+		19E24B701CEB966100DE36E0 /* home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B6F1CEB966100DE36E0 /* home@3x.png */; };
+		19E24B731CEB96B100DE36E0 /* map@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B711CEB96B100DE36E0 /* map@3x.png */; };
+		19E24B741CEB96B100DE36E0 /* profile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B721CEB96B100DE36E0 /* profile@3x.png */; };
+		19E24B771CEB96C000DE36E0 /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B751CEB96C000DE36E0 /* map@2x.png */; };
+		19E24B781CEB96C000DE36E0 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B761CEB96C000DE36E0 /* profile@2x.png */; };
+		19E24B7A1CEB96CD00DE36E0 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B791CEB96CD00DE36E0 /* profile.png */; };
+		19E24B7C1CEB96D300DE36E0 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B7B1CEB96D300DE36E0 /* map.png */; };
+		19E24B7E1CEB974100DE36E0 /* scan.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B7D1CEB974100DE36E0 /* scan.png */; };
+		19E24B801CEB975000DE36E0 /* scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B7F1CEB975000DE36E0 /* scan@2x.png */; };
+		19E24B821CEB975A00DE36E0 /* scan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B811CEB975A00DE36E0 /* scan@3x.png */; };
+		19E24B871CEB980000DE36E0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E24B861CEB980000DE36E0 /* HomeViewController.m */; };
+		19E24B8A1CEB980B00DE36E0 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E24B891CEB980B00DE36E0 /* ProfileViewController.m */; };
+		19E24B8D1CEB981A00DE36E0 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E24B8C1CEB981A00DE36E0 /* ScanViewController.m */; };
+		19E24B931CEB988E00DE36E0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E24B921CEB988E00DE36E0 /* MapViewController.m */; };
+		19E24B961CEB98AC00DE36E0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E24B951CEB98AC00DE36E0 /* LoginViewController.m */; };
+		19E24B991CEB98B800DE36E0 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E24B981CEB98B800DE36E0 /* RegisterViewController.m */; };
+		19E24B9C1CEB993500DE36E0 /* StatisticsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E24B9B1CEB993500DE36E0 /* StatisticsTableViewController.m */; };
+		19E24BA31CEBA85E00DE36E0 /* DatabaseInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E24BA21CEBA85E00DE36E0 /* DatabaseInformation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19E24B471CEB93DB00DE36E0 /* GeoScan-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GeoScan-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19E24B4B1CEB93DB00DE36E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19E24B4D1CEB93DB00DE36E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		19E24B4E1CEB93DB00DE36E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19E24B571CEB93DB00DE36E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19E24B591CEB93DB00DE36E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19E24B5C1CEB93DB00DE36E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19E24B5E1CEB93DB00DE36E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19E24B651CEB963400DE36E0 /* Statistics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Statistics.png; sourceTree = "<group>"; };
+		19E24B661CEB963400DE36E0 /* Statistics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Statistics@2x.png"; sourceTree = "<group>"; };
+		19E24B671CEB963400DE36E0 /* Statistics@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Statistics@3x.png"; sourceTree = "<group>"; };
+		19E24B6B1CEB964F00DE36E0 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		19E24B6D1CEB965800DE36E0 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		19E24B6F1CEB966100DE36E0 /* home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@3x.png"; sourceTree = "<group>"; };
+		19E24B711CEB96B100DE36E0 /* map@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@3x.png"; sourceTree = "<group>"; };
+		19E24B721CEB96B100DE36E0 /* profile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@3x.png"; sourceTree = "<group>"; };
+		19E24B751CEB96C000DE36E0 /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
+		19E24B761CEB96C000DE36E0 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
+		19E24B791CEB96CD00DE36E0 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		19E24B7B1CEB96D300DE36E0 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		19E24B7D1CEB974100DE36E0 /* scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan.png; sourceTree = "<group>"; };
+		19E24B7F1CEB975000DE36E0 /* scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan@2x.png"; sourceTree = "<group>"; };
+		19E24B811CEB975A00DE36E0 /* scan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan@3x.png"; sourceTree = "<group>"; };
+		19E24B851CEB980000DE36E0 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		19E24B861CEB980000DE36E0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		19E24B881CEB980B00DE36E0 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		19E24B891CEB980B00DE36E0 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		19E24B8B1CEB981A00DE36E0 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		19E24B8C1CEB981A00DE36E0 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		19E24B911CEB988E00DE36E0 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		19E24B921CEB988E00DE36E0 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		19E24B941CEB98AC00DE36E0 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		19E24B951CEB98AC00DE36E0 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		19E24B971CEB98B800DE36E0 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		19E24B981CEB98B800DE36E0 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		19E24B9A1CEB993500DE36E0 /* StatisticsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsTableViewController.h; sourceTree = "<group>"; };
+		19E24B9B1CEB993500DE36E0 /* StatisticsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsTableViewController.m; sourceTree = "<group>"; };
+		19E24BA11CEBA85E00DE36E0 /* DatabaseInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseInformation.h; sourceTree = "<group>"; };
+		19E24BA21CEBA85E00DE36E0 /* DatabaseInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseInformation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19E24B441CEB93DB00DE36E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19E24B3E1CEB93DB00DE36E0 = {
+			isa = PBXGroup;
+			children = (
+				19E24B491CEB93DB00DE36E0 /* GeoScan-iOS */,
+				19E24B481CEB93DB00DE36E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19E24B481CEB93DB00DE36E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19E24B471CEB93DB00DE36E0 /* GeoScan-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19E24B491CEB93DB00DE36E0 /* GeoScan-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				19E24B641CEB962400DE36E0 /* Resources */,
+				19E24B4D1CEB93DB00DE36E0 /* AppDelegate.h */,
+				19E24B4E1CEB93DB00DE36E0 /* AppDelegate.m */,
+				19E24B9D1CEBA54A00DE36E0 /* DatabaseCommunication */,
+				19E24B841CEB97F100DE36E0 /* Views */,
+				19E24B831CEB97E200DE36E0 /* ViewControllers */,
+				19E24B561CEB93DB00DE36E0 /* Main.storyboard */,
+				19E24B591CEB93DB00DE36E0 /* Assets.xcassets */,
+				19E24B5B1CEB93DB00DE36E0 /* LaunchScreen.storyboard */,
+				19E24B5E1CEB93DB00DE36E0 /* Info.plist */,
+				19E24B4A1CEB93DB00DE36E0 /* Supporting Files */,
+			);
+			path = "GeoScan-iOS";
+			sourceTree = "<group>";
+		};
+		19E24B4A1CEB93DB00DE36E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19E24B4B1CEB93DB00DE36E0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19E24B641CEB962400DE36E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19E24B651CEB963400DE36E0 /* Statistics.png */,
+				19E24B661CEB963400DE36E0 /* Statistics@2x.png */,
+				19E24B671CEB963400DE36E0 /* Statistics@3x.png */,
+				19E24B6B1CEB964F00DE36E0 /* home.png */,
+				19E24B6D1CEB965800DE36E0 /* home@2x.png */,
+				19E24B6F1CEB966100DE36E0 /* home@3x.png */,
+				19E24B711CEB96B100DE36E0 /* map@3x.png */,
+				19E24B721CEB96B100DE36E0 /* profile@3x.png */,
+				19E24B751CEB96C000DE36E0 /* map@2x.png */,
+				19E24B761CEB96C000DE36E0 /* profile@2x.png */,
+				19E24B791CEB96CD00DE36E0 /* profile.png */,
+				19E24B7B1CEB96D300DE36E0 /* map.png */,
+				19E24B7D1CEB974100DE36E0 /* scan.png */,
+				19E24B7F1CEB975000DE36E0 /* scan@2x.png */,
+				19E24B811CEB975A00DE36E0 /* scan@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19E24B831CEB97E200DE36E0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				19E24B851CEB980000DE36E0 /* HomeViewController.h */,
+				19E24B861CEB980000DE36E0 /* HomeViewController.m */,
+				19E24B881CEB980B00DE36E0 /* ProfileViewController.h */,
+				19E24B891CEB980B00DE36E0 /* ProfileViewController.m */,
+				19E24B8B1CEB981A00DE36E0 /* ScanViewController.h */,
+				19E24B8C1CEB981A00DE36E0 /* ScanViewController.m */,
+				19E24B9A1CEB993500DE36E0 /* StatisticsTableViewController.h */,
+				19E24B9B1CEB993500DE36E0 /* StatisticsTableViewController.m */,
+				19E24B911CEB988E00DE36E0 /* MapViewController.h */,
+				19E24B921CEB988E00DE36E0 /* MapViewController.m */,
+				19E24B941CEB98AC00DE36E0 /* LoginViewController.h */,
+				19E24B951CEB98AC00DE36E0 /* LoginViewController.m */,
+				19E24B971CEB98B800DE36E0 /* RegisterViewController.h */,
+				19E24B981CEB98B800DE36E0 /* RegisterViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		19E24B841CEB97F100DE36E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		19E24B9D1CEBA54A00DE36E0 /* DatabaseCommunication */ = {
+			isa = PBXGroup;
+			children = (
+				19E24BA11CEBA85E00DE36E0 /* DatabaseInformation.h */,
+				19E24BA21CEBA85E00DE36E0 /* DatabaseInformation.m */,
+			);
+			name = DatabaseCommunication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19E24B461CEB93DB00DE36E0 /* GeoScan-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19E24B611CEB93DB00DE36E0 /* Build configuration list for PBXNativeTarget "GeoScan-iOS" */;
+			buildPhases = (
+				19E24B431CEB93DB00DE36E0 /* Sources */,
+				19E24B441CEB93DB00DE36E0 /* Frameworks */,
+				19E24B451CEB93DB00DE36E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GeoScan-iOS";
+			productName = "GeoScan-iOS";
+			productReference = 19E24B471CEB93DB00DE36E0 /* GeoScan-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19E24B3F1CEB93DB00DE36E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Rapid Development Crew";
+				TargetAttributes = {
+					19E24B461CEB93DB00DE36E0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 19E24B421CEB93DB00DE36E0 /* Build configuration list for PBXProject "GeoScan-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19E24B3E1CEB93DB00DE36E0;
+			productRefGroup = 19E24B481CEB93DB00DE36E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19E24B461CEB93DB00DE36E0 /* GeoScan-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19E24B451CEB93DB00DE36E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E24B7E1CEB974100DE36E0 /* scan.png in Resources */,
+				19E24B741CEB96B100DE36E0 /* profile@3x.png in Resources */,
+				19E24B691CEB963400DE36E0 /* Statistics@2x.png in Resources */,
+				19E24B6E1CEB965800DE36E0 /* home@2x.png in Resources */,
+				19E24B781CEB96C000DE36E0 /* profile@2x.png in Resources */,
+				19E24B701CEB966100DE36E0 /* home@3x.png in Resources */,
+				19E24B801CEB975000DE36E0 /* scan@2x.png in Resources */,
+				19E24B821CEB975A00DE36E0 /* scan@3x.png in Resources */,
+				19E24B681CEB963400DE36E0 /* Statistics.png in Resources */,
+				19E24B771CEB96C000DE36E0 /* map@2x.png in Resources */,
+				19E24B6C1CEB964F00DE36E0 /* home.png in Resources */,
+				19E24B5D1CEB93DB00DE36E0 /* LaunchScreen.storyboard in Resources */,
+				19E24B7C1CEB96D300DE36E0 /* map.png in Resources */,
+				19E24B731CEB96B100DE36E0 /* map@3x.png in Resources */,
+				19E24B5A1CEB93DB00DE36E0 /* Assets.xcassets in Resources */,
+				19E24B6A1CEB963400DE36E0 /* Statistics@3x.png in Resources */,
+				19E24B581CEB93DB00DE36E0 /* Main.storyboard in Resources */,
+				19E24B7A1CEB96CD00DE36E0 /* profile.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19E24B431CEB93DB00DE36E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E24B961CEB98AC00DE36E0 /* LoginViewController.m in Sources */,
+				19E24B4F1CEB93DB00DE36E0 /* AppDelegate.m in Sources */,
+				19E24B8D1CEB981A00DE36E0 /* ScanViewController.m in Sources */,
+				19E24B9C1CEB993500DE36E0 /* StatisticsTableViewController.m in Sources */,
+				19E24B4C1CEB93DB00DE36E0 /* main.m in Sources */,
+				19E24B991CEB98B800DE36E0 /* RegisterViewController.m in Sources */,
+				19E24B8A1CEB980B00DE36E0 /* ProfileViewController.m in Sources */,
+				19E24B871CEB980000DE36E0 /* HomeViewController.m in Sources */,
+				19E24BA31CEBA85E00DE36E0 /* DatabaseInformation.m in Sources */,
+				19E24B931CEB988E00DE36E0 /* MapViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		19E24B561CEB93DB00DE36E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19E24B571CEB93DB00DE36E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19E24B5B1CEB93DB00DE36E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19E24B5C1CEB93DB00DE36E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19E24B5F1CEB93DB00DE36E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19E24B601CEB93DB00DE36E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19E24B621CEB93DB00DE36E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "GeoScan-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RDCrew.GeoScan-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19E24B631CEB93DB00DE36E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "GeoScan-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RDCrew.GeoScan-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19E24B421CEB93DB00DE36E0 /* Build configuration list for PBXProject "GeoScan-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19E24B5F1CEB93DB00DE36E0 /* Debug */,
+				19E24B601CEB93DB00DE36E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19E24B611CEB93DB00DE36E0 /* Build configuration list for PBXNativeTarget "GeoScan-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19E24B621CEB93DB00DE36E0 /* Debug */,
+				19E24B631CEB93DB00DE36E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19E24B3F1CEB93DB00DE36E0 /* Project object */;
+}
