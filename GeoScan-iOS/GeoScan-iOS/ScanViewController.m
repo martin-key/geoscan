@@ -8,7 +8,10 @@
 
 #import "ScanViewController.h"
 
+
 @interface ScanViewController ()
+
+@property (weak, nonatomic) IBOutlet RDCodeScannerView *codeScannerView;
 
 @end
 
@@ -16,24 +19,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Do any additional setup after loading the view.
+    self.codeScannerView.delegate = self;
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    [self.codeScannerView startReading];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) codeScanned:(RDCodeScannerView *)object codeData:(NSString *)codeData
+{
+    NSLog(@"%@\n", codeData);
 }
-*/
+
 
 @end

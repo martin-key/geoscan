@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RDCodeScannerView.h"
 
-@interface ScanViewController : UIViewController
+@interface ScanViewController : UIViewController <RDCodeScannerDelegate>
 
 @end

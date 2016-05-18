@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19C37EB61CED2972001EB2C0 /* RDCodeScannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C37EB51CED2972001EB2C0 /* RDCodeScannerView.m */; };
+		19C37EB81CED2B2E001EB2C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C37EB71CED2B2E001EB2C0 /* AVFoundation.framework */; };
 		19E24B4C1CEB93DB00DE36E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E24B4B1CEB93DB00DE36E0 /* main.m */; };
 		19E24B4F1CEB93DB00DE36E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E24B4E1CEB93DB00DE36E0 /* AppDelegate.m */; };
 		19E24B581CEB93DB00DE36E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E24B561CEB93DB00DE36E0 /* Main.storyboard */; };
@@ -38,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19C37EB41CED2972001EB2C0 /* RDCodeScannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCodeScannerView.h; sourceTree = "<group>"; };
+		19C37EB51CED2972001EB2C0 /* RDCodeScannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDCodeScannerView.m; sourceTree = "<group>"; };
+		19C37EB71CED2B2E001EB2C0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		19E24B471CEB93DB00DE36E0 /* GeoScan-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GeoScan-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E24B4B1CEB93DB00DE36E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		19E24B4D1CEB93DB00DE36E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,15 +89,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19C37EB81CED2B2E001EB2C0 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19C37EA31CED258C001EB2C0 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
 		19DE4BAC1CED19E600BC7494 /* RapidDevelopment */ = {
 			isa = PBXGroup;
 			children = (
+				19C37EB41CED2972001EB2C0 /* RDCodeScannerView.h */,
+				19C37EB51CED2972001EB2C0 /* RDCodeScannerView.m */,
 			);
 			name = RapidDevelopment;
 			sourceTree = "<group>";
@@ -100,6 +115,7 @@
 		19E24B3E1CEB93DB00DE36E0 = {
 			isa = PBXGroup;
 			children = (
+				19C37EB71CED2B2E001EB2C0 /* AVFoundation.framework */,
 				19E24B491CEB93DB00DE36E0 /* GeoScan-iOS */,
 				19E24B481CEB93DB00DE36E0 /* Products */,
 			);
@@ -119,6 +135,7 @@
 				19E24B641CEB962400DE36E0 /* Resources */,
 				19E24B4D1CEB93DB00DE36E0 /* AppDelegate.h */,
 				19E24B4E1CEB93DB00DE36E0 /* AppDelegate.m */,
+				19C37EA31CED258C001EB2C0 /* ThirdParty */,
 				19DE4BAC1CED19E600BC7494 /* RapidDevelopment */,
 				19E24B9D1CEBA54A00DE36E0 /* DatabaseCommunication */,
 				19E24B841CEB97F100DE36E0 /* Views */,
@@ -284,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19C37EB61CED2972001EB2C0 /* RDCodeScannerView.m in Sources */,
 				19E24B961CEB98AC00DE36E0 /* LoginViewController.m in Sources */,
 				19E24B4F1CEB93DB00DE36E0 /* AppDelegate.m in Sources */,
 				19E24B8D1CEB981A00DE36E0 /* ScanViewController.m in Sources */,
