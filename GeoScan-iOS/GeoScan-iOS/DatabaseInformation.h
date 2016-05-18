@@ -11,6 +11,14 @@
 
 @interface DatabaseInformation : NSObject
 
+#define CONNECTION_PROBLEMS @"ConnectionProblems"
+
+#define LOGIN_SUCCESSFUL @"LoginSuccessful"
+#define LOGIN_NOT_SUCCESSFUL @"LoginUnsuccessful"
+
+#define REGISTRATION_SUCCESSFUL @"RegistrationSuccessful"
+#define REGISTRATION_NOT_SUCCESSFUL @"RegisterNotSuccessful"
+
 @property (nonatomic, strong) NSMutableDictionary * userdata;
 @property (nonatomic, strong) NSMutableArray * items;
 @property (nonatomic, strong) NSMutableArray * geocaches;
@@ -19,7 +27,8 @@
 
 +(instancetype)sharedInstance;
 
-- (BOOL) loginWithName: (NSString *) name andPassword: (NSString *) password;
+- (void) loginWithName: (NSString *) name andPassword: (NSString *) password;
+- (void) registerUserWithUsername: (NSString *) username password: (NSString *) password email: (NSString *) email firstname: (NSString *) firstname lastname: (NSString *) lastname;
 
 - (void) updateUserData;
 - (void) updateItemsData;

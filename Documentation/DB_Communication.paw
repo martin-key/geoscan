@@ -448,7 +448,7 @@
         <relationship name="request" type="0/1" destination="LMREQUEST" idrefs="z131"></relationship>
     </object>
     <object type="LMKEYVALUE" id="z139">
-        <attribute name="value" type="string">["{\\"email\\":\\"martinkuvandzhiev@gmail.com\\", \\"password\\":\\"PeterEGey\\"}"]</attribute>
+        <attribute name="value" type="string">["{\\"username\\":\\"testuser\\", \\"password\\":\\"123456\\"}"]</attribute>
         <attribute name="order" type="int64">0</attribute>
         <attribute name="name" type="string">Credentials</attribute>
         <attribute name="enabled" type="bool">1</attribute>

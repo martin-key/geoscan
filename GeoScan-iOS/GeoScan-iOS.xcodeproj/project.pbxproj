@@ -90,6 +90,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19DE4BAC1CED19E600BC7494 /* RapidDevelopment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = RapidDevelopment;
+			sourceTree = "<group>";
+		};
 		19E24B3E1CEB93DB00DE36E0 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +119,7 @@
 				19E24B641CEB962400DE36E0 /* Resources */,
 				19E24B4D1CEB93DB00DE36E0 /* AppDelegate.h */,
 				19E24B4E1CEB93DB00DE36E0 /* AppDelegate.m */,
+				19DE4BAC1CED19E600BC7494 /* RapidDevelopment */,
 				19E24B9D1CEBA54A00DE36E0 /* DatabaseCommunication */,
 				19E24B841CEB97F100DE36E0 /* Views */,
 				19E24B831CEB97E200DE36E0 /* ViewControllers */,
@@ -436,6 +444,7 @@
 				19E24B631CEB93DB00DE36E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

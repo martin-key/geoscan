@@ -1,0 +1,3 @@
+[submodule "GeoScan-iOS/GeoScan-iOS/QRCodeReaderViewController"]
+	path = GeoScan-iOS/GeoScan-iOS/QRCodeReaderViewController
+	url = https://github.com/YannickL/QRCodeReaderViewController

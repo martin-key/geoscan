@@ -13,11 +13,11 @@ class DbConnect
 		$this->dbConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	}
 	
-	function authorization_check($email, $password)
+	function authorization_check($username, $password)
 	{
-		$query = 'Select email, password from users where email = :email';
+		$query = 'Select username, password from users where username = :username';
 		$stmt = $this->dbConnection->prepare($query);
-		$params = array('email' => $email);
+		$params = array('username' => $username);
 		$stmt->execute($params);
 		$result = $stmt->fetch(PDO::FETCH_ASSOC);
 		if(is_array($result) && $result && password_verify($password, $result['password']))
