@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0rn-yb-Ulh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0rn-yb-Ulh">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="RCC-cI-Gx3"/>
@@ -41,34 +41,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VEw-ne-IbE">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="296" id="1YV-IB-6op"/>
-                                    <constraint firstAttribute="height" constant="30" id="5RP-u5-x6t"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="T2v-rE-wQe"/>
-                                    <constraint firstAttribute="width" constant="296" id="djM-k8-Xvh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="1YV-IB-6op"/>
-                                        <exclude reference="5RP-u5-x6t"/>
-                                        <exclude reference="T2v-rE-wQe"/>
-                                        <exclude reference="djM-k8-Xvh"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="1YV-IB-6op"/>
-                                        <include reference="5RP-u5-x6t"/>
-                                        <include reference="T2v-rE-wQe"/>
-                                        <include reference="djM-k8-Xvh"/>
-                                    </mask>
-                                </variation>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password again" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eqK-T9-I5y">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password again" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eqK-T9-I5y">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Nzx-HB-qQc"/>
@@ -77,7 +50,7 @@
                                     <constraint firstAttribute="height" constant="30" id="wMq-Zg-nkb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Nzx-HB-qQc"/>
@@ -95,7 +68,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O2I-m8-Ybw">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="O2I-m8-Ybw">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0UK-T0-DTZ"/>
@@ -122,7 +95,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2T1-iC-1Ci">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2T1-iC-1Ci">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0YZ-9F-Cr6"/>
@@ -149,7 +122,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eBk-Z8-jnv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eBk-Z8-jnv">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="296" id="0Ww-uM-3V9"/>
@@ -203,6 +176,33 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="y8i-12-qLB">
                                 <rect key="frame" x="-10" y="-10" width="20" height="20"/>
                             </activityIndicatorView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VEw-ne-IbE">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="296" id="1YV-IB-6op"/>
+                                    <constraint firstAttribute="height" constant="30" id="5RP-u5-x6t"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="T2v-rE-wQe"/>
+                                    <constraint firstAttribute="width" constant="296" id="djM-k8-Xvh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1YV-IB-6op"/>
+                                        <exclude reference="5RP-u5-x6t"/>
+                                        <exclude reference="T2v-rE-wQe"/>
+                                        <exclude reference="djM-k8-Xvh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1YV-IB-6op"/>
+                                        <include reference="5RP-u5-x6t"/>
+                                        <include reference="T2v-rE-wQe"/>
+                                        <include reference="djM-k8-Xvh"/>
+                                    </mask>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -228,13 +228,13 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="0rn-yb-Ulh"/>
-                                <exclude reference="VEw-ne-IbE"/>
                                 <exclude reference="eqK-T9-I5y"/>
                                 <exclude reference="O2I-m8-Ybw"/>
                                 <exclude reference="2T1-iC-1Ci"/>
                                 <exclude reference="eBk-Z8-jnv"/>
                                 <exclude reference="epX-Pe-VLv"/>
                                 <exclude reference="y8i-12-qLB"/>
+                                <exclude reference="VEw-ne-IbE"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="g1A-ai-n56"/>
@@ -258,13 +258,13 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="0rn-yb-Ulh"/>
-                                <include reference="VEw-ne-IbE"/>
                                 <include reference="eqK-T9-I5y"/>
                                 <include reference="O2I-m8-Ybw"/>
                                 <include reference="2T1-iC-1Ci"/>
                                 <include reference="eBk-Z8-jnv"/>
                                 <include reference="epX-Pe-VLv"/>
                                 <include reference="y8i-12-qLB"/>
+                                <include reference="VEw-ne-IbE"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="g1A-ai-n56"/>

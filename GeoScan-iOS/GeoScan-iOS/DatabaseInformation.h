@@ -19,10 +19,16 @@
 #define REGISTRATION_SUCCESSFUL @"RegistrationSuccessful"
 #define REGISTRATION_NOT_SUCCESSFUL @"RegisterNotSuccessful"
 
-@property (nonatomic, strong) NSMutableDictionary * userdata;
-@property (nonatomic, strong) NSMutableArray * items;
-@property (nonatomic, strong) NSMutableArray * geocaches;
-@property (nonatomic, strong) NSMutableArray * locations;
+#define USERDATA_UPDATED @"UserdataUpdated"
+#define ITEMDATA_UPDATED @"ItemdataUpdated"
+#define LOCATIONDATA_UPDATE @"LocationDataUpdated"
+#define LOGS_UPDATED @"LogsUpdated"
+
+@property (nonatomic, strong) __block NSMutableDictionary * userdata;
+@property (nonatomic, copy) __block NSMutableArray * items;
+@property (nonatomic, copy) __block NSMutableArray * userItems;
+@property (nonatomic, copy) __block NSMutableArray * logs;
+@property (nonatomic, copy) __block NSMutableArray * locations;
 
 
 +(instancetype)sharedInstance;
@@ -32,7 +38,7 @@
 
 - (void) updateUserData;
 - (void) updateItemsData;
-- (void) updateGeocachesData;
+- (void) updateLogsData;
 - (void) updateLocationsData;
 
 

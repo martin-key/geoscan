@@ -5,10 +5,10 @@ include '../mysql.php';
 $headers = getallheaders();
 $json = $headers['Credentials'];
 $credentials = json_decode($json, true);
-if($credentials['email'] != NULL)
+if($credentials['username'] != NULL)
 {
 	$db = new DbConnect();
-	$query = "select id, username, name, familyName, email from users where email like :email";
+	$query = "select id, username, name, familyName, email, points from users where username like :username";
 	
 	$result = $db->execute_query($query, $credentials, true);
 	if($result)

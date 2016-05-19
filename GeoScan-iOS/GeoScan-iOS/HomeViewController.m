@@ -7,15 +7,29 @@
 //
 
 #import "HomeViewController.h"
+#import "DatabaseInformation.h"
+
 
 @interface HomeViewController ()
-
+{
+    DatabaseInformation * database;
+}
 @end
 
 @implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    database = [DatabaseInformation sharedInstance];
+    [database updateUserData];
+    [database updateItemsData];
+    [database updateLocationsData];
+    [database updateLogsData];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userdataUpdatedNotificationHandler:) name:USERDATA_UPDATED object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(itemdataUpdateNotificationHandler:) name:ITEMDATA_UPDATED object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationsUpdatedNotificationHandler:) name:LOCATIONDATA_UPDATE object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logsUpdatedNotificationHandler:) name:LOGS_UPDATED object:nil];
     // Do any additional setup after loading the view.
 }
 
@@ -34,4 +48,23 @@
 }
 */
 
+- (void) userdataUpdatedNotificationHandler: (NSNotification *) notification
+{
+    NSLog(@"%@", database.userdata);
+}
+
+- (void) itemdataUpdateNotificationHandler: (NSNotification *) notification
+{
+    NSLog(@"%@", database.items);
+}
+
+- (void) locationsUpdatedNotificationHandler: (NSNotification *) notification
+{
+    NSLog(@"%@", database.locations);
+}
+
+- (void) logsUpdatedNotificationHandler: (NSNotification *) notification
+{
+    NSLog(@"%@", database.logs);
+}
 @end

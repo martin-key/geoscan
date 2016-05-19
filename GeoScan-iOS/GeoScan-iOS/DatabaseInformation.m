@@ -21,6 +21,21 @@
     return sharedInstance;
 }
 
+- (instancetype) init
+{
+    self = [super init];
+    if(self)
+    {
+        self.userdata = [[NSMutableDictionary alloc] init];
+    }
+    return self;
+}
+
+
+
+
+
+
 - (void) loginWithName: (NSString *) name andPassword: (NSString *) password
 {
     NSURLSessionConfiguration* sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -40,6 +55,7 @@
     [request addValue:[NSString stringWithFormat: @"{\"username\":\"%@\", \"password\":\"%@\"}", name, password] forHTTPHeaderField:@"Credentials"];
     
     /* Start a new Task */
+    __block NSString * usernameString = [NSString stringWithString:name];
     NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error == nil) {
             // Success
@@ -47,8 +63,10 @@
             if(((NSHTTPURLResponse*)response).statusCode == 200)
             {
                 [[NSNotificationCenter defaultCenter] postNotificationName:LOGIN_SUCCESSFUL object:self];
+                [self.userdata setObject:usernameString forKey:@"username"];
             }
             else
+                
             {
                 [[NSNotificationCenter defaultCenter] postNotificationName:LOGIN_NOT_SUCCESSFUL object:self];
             }
@@ -68,17 +86,8 @@
 
 
 
-
-
 - (void) registerUserWithUsername: (NSString *) username password: (NSString *) password email: (NSString *) email firstname: (NSString *) firstname lastname: (NSString *) lastname
 {
-    /* Configure session, choose between:
-     * defaultSessionConfiguration
-     * ephemeralSessionConfiguration
-     * backgroundSessionConfigurationWithIdentifier:
-     And set session-wide properties, such as: HTTPAdditionalHeaders,
-     HTTPCookieAcceptPolicy, requestCachePolicy or timeoutIntervalForRequest.
-     */
     NSURLSessionConfiguration* sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
     
     /* Create session, and optionally set a NSURLSessionDelegate. */
@@ -126,6 +135,159 @@
     [task resume];
 }
 
+
+
+
+
+
+- (void) updateUserData
+{
+    NSURLSessionConfiguration* sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
+    
+    /* Create session, and optionally set a NSURLSessionDelegate. */
+    NSURLSession* session = [NSURLSession sessionWithConfiguration:sessionConfig delegate:nil delegateQueue:nil];
+    
+    /* Create the Request:
+     getUserInfo (GET http://rapiddevcrew.com/geoscan/userinfo/)
+     */
+    
+    NSURL* URL = [NSURL URLWithString:@"http://rapiddevcrew.com/geoscan/userinfo/"];
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:URL];
+    request.HTTPMethod = @"GET";
+    
+    // Headers
+    
+    [request addValue:[NSString stringWithFormat:@"{\"username\":\"%@\"}", [self.userdata objectForKey:@"username"]] forHTTPHeaderField:@"Credentials"];
+    
+    
+    __block NSMutableArray * responseArray = [[NSMutableArray alloc] init];
+    /* Start a new Task */
+    NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error == nil) {
+            // Success
+            responseArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error: &error];
+            NSDictionary * responseDictionary = [NSDictionary dictionaryWithDictionary:[responseArray objectAtIndex:0]];
+            [self.userdata setValuesForKeysWithDictionary:responseDictionary];
+            [[NSNotificationCenter defaultCenter] postNotificationName:USERDATA_UPDATED object:self];
+        }
+        else {
+            // Failure
+            [[NSNotificationCenter defaultCenter] postNotificationName:CONNECTION_PROBLEMS object:self];
+        }
+    }];
+    [task resume];
+
+}
+
+
+
+
+
+- (void) updateItemsData
+{
+    NSURLSessionConfiguration* sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
+    
+    /* Create session, and optionally set a NSURLSessionDelegate. */
+    NSURLSession* session = [NSURLSession sessionWithConfiguration:sessionConfig delegate:nil delegateQueue:nil];
+    
+    /* Create the Request:
+     getItems (GET http://rapiddevcrew.com/geoscan/getItems/)
+     */
+    
+    NSURL* URL = [NSURL URLWithString:@"http://rapiddevcrew.com/geoscan/getItems/"];
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:URL];
+    request.HTTPMethod = @"GET";
+    
+    __block NSMutableArray * responseArray = [[NSMutableArray alloc] init];
+    /* Start a new Task */
+    NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error == nil) {
+            // Success
+            responseArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error: &error];
+            self.items = [NSMutableArray arrayWithArray:responseArray];
+            [[NSNotificationCenter defaultCenter] postNotificationName:ITEMDATA_UPDATED object:self];
+        }
+        else {
+            // Failure
+            [[NSNotificationCenter defaultCenter] postNotificationName:CONNECTION_PROBLEMS object:self];
+        }
+    }];
+    [task resume];
+
+}
+
+
+
+
+
+- (void) updateLocationsData
+{
+    NSURLSessionConfiguration* sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession* session = [NSURLSession sessionWithConfiguration:sessionConfig delegate:nil delegateQueue:nil];
+    
+    /* Create the Request:
+     getLocations (GET http://rapiddevcrew.com/geoscan/getLocations/)
+     */
+    
+    NSURL* URL = [NSURL URLWithString:@"http://rapiddevcrew.com/geoscan/getLocations/"];
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:URL];
+    request.HTTPMethod = @"GET";
+    
+     __block NSMutableArray * responseArray = [[NSMutableArray alloc] init];
+    /* Start a new Task */
+    NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error == nil) {
+            // Success
+            responseArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error: &error];
+            self.locations = [NSMutableArray arrayWithArray:responseArray];
+            [[NSNotificationCenter defaultCenter] postNotificationName:LOCATIONDATA_UPDATE object:self];
+        }
+        else {
+            // Failure
+           [[NSNotificationCenter defaultCenter] postNotificationName:CONNECTION_PROBLEMS object:self];
+        }
+    }];
+    [task resume];
+}
+
+
+
+- (void) updateLogsData
+{
+    NSURLSessionConfiguration* sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
+    
+    /* Create session, and optionally set a NSURLSessionDelegate. */
+    NSURLSession* session = [NSURLSession sessionWithConfiguration:sessionConfig delegate:nil delegateQueue:nil];
+    
+    /* Create the Request:
+     getLogsForUser (GET http://rapiddevcrew.com/geoscan/getLogs/)
+     */
+    
+    NSURL* URL = [NSURL URLWithString:@"http://rapiddevcrew.com/geoscan/getLogs/"];
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:URL];
+    request.HTTPMethod = @"GET";
+    
+    // Headers
+    
+    [request addValue:[NSString stringWithFormat:@"{\"user_id\":\"%@\"}", [self.userdata valueForKey:@"id"]] forHTTPHeaderField:@"data"];
+    
+     __block NSMutableArray * responseArray = [[NSMutableArray alloc] init];
+    
+    /* Start a new Task */
+    NSURLSessionDataTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error == nil) {
+            // Success
+            responseArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error: &error];
+            self.logs = [NSMutableArray arrayWithArray:responseArray];
+            [[NSNotificationCenter defaultCenter] postNotificationName:LOGS_UPDATED object:self];
+        }
+        else {
+            [[NSNotificationCenter defaultCenter] postNotificationName:CONNECTION_PROBLEMS object:self];
+        }
+    }];
+    [task resume];
+
+}
 
 
 
