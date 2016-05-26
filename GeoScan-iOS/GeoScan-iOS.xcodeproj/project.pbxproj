@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1929F2161CF64850006A9DD7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1929F2151CF64850006A9DD7 /* MapKit.framework */; };
+		1929F21D1CF70D9C006A9DD7 /* ItemsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929F21C1CF70D9C006A9DD7 /* ItemsCollectionViewCell.m */; };
+		1929F21F1CF70F3E006A9DD7 /* itemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1929F21E1CF70F3E006A9DD7 /* itemCollectionViewCell.xib */; };
+		1929F2221CF73893006A9DD7 /* TransferItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929F2211CF73893006A9DD7 /* TransferItemsViewController.m */; };
+		1929F2241CF7448A006A9DD7 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 1929F2231CF7448A006A9DD7 /* apple.png */; };
+		1929F2261CF74A57006A9DD7 /* medal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1929F2251CF74A57006A9DD7 /* medal.png */; };
+		1929F2281CF74A6B006A9DD7 /* flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 1929F2271CF74A6B006A9DD7 /* flower.png */; };
+		1929F22A1CF74A7C006A9DD7 /* cat sticker.png in Resources */ = {isa = PBXBuildFile; fileRef = 1929F2291CF74A7C006A9DD7 /* cat sticker.png */; };
+		1929F22C1CF74A97006A9DD7 /* sticker.png in Resources */ = {isa = PBXBuildFile; fileRef = 1929F22B1CF74A97006A9DD7 /* sticker.png */; };
 		19C37EB61CED2972001EB2C0 /* RDCodeScannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C37EB51CED2972001EB2C0 /* RDCodeScannerView.m */; };
 		19C37EB81CED2B2E001EB2C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C37EB71CED2B2E001EB2C0 /* AVFoundation.framework */; };
 		19E24B4C1CEB93DB00DE36E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E24B4B1CEB93DB00DE36E0 /* main.m */; };
@@ -40,6 +49,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1929F2151CF64850006A9DD7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1929F21B1CF70D9C006A9DD7 /* ItemsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsCollectionViewCell.h; sourceTree = "<group>"; };
+		1929F21C1CF70D9C006A9DD7 /* ItemsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsCollectionViewCell.m; sourceTree = "<group>"; };
+		1929F21E1CF70F3E006A9DD7 /* itemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = itemCollectionViewCell.xib; sourceTree = "<group>"; };
+		1929F2201CF73893006A9DD7 /* TransferItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferItemsViewController.h; sourceTree = "<group>"; };
+		1929F2211CF73893006A9DD7 /* TransferItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferItemsViewController.m; sourceTree = "<group>"; };
+		1929F2231CF7448A006A9DD7 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		1929F2251CF74A57006A9DD7 /* medal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medal.png; sourceTree = "<group>"; };
+		1929F2271CF74A6B006A9DD7 /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower.png; sourceTree = "<group>"; };
+		1929F2291CF74A7C006A9DD7 /* cat sticker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat sticker.png"; sourceTree = "<group>"; };
+		1929F22B1CF74A97006A9DD7 /* sticker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sticker.png; sourceTree = "<group>"; };
 		19C37EB41CED2972001EB2C0 /* RDCodeScannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCodeScannerView.h; sourceTree = "<group>"; };
 		19C37EB51CED2972001EB2C0 /* RDCodeScannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDCodeScannerView.m; sourceTree = "<group>"; };
 		19C37EB71CED2B2E001EB2C0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1929F2161CF64850006A9DD7 /* MapKit.framework in Frameworks */,
 				19C37EB81CED2B2E001EB2C0 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +136,7 @@
 		19E24B3E1CEB93DB00DE36E0 = {
 			isa = PBXGroup;
 			children = (
+				1929F2151CF64850006A9DD7 /* MapKit.framework */,
 				19C37EB71CED2B2E001EB2C0 /* AVFoundation.framework */,
 				19E24B491CEB93DB00DE36E0 /* GeoScan-iOS */,
 				19E24B481CEB93DB00DE36E0 /* Products */,
@@ -160,6 +182,11 @@
 		19E24B641CEB962400DE36E0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1929F2231CF7448A006A9DD7 /* apple.png */,
+				1929F2251CF74A57006A9DD7 /* medal.png */,
+				1929F2271CF74A6B006A9DD7 /* flower.png */,
+				1929F2291CF74A7C006A9DD7 /* cat sticker.png */,
+				1929F22B1CF74A97006A9DD7 /* sticker.png */,
 				19E24B651CEB963400DE36E0 /* Statistics.png */,
 				19E24B661CEB963400DE36E0 /* Statistics@2x.png */,
 				19E24B671CEB963400DE36E0 /* Statistics@3x.png */,
@@ -196,6 +223,8 @@
 				19E24B951CEB98AC00DE36E0 /* LoginViewController.m */,
 				19E24B971CEB98B800DE36E0 /* RegisterViewController.h */,
 				19E24B981CEB98B800DE36E0 /* RegisterViewController.m */,
+				1929F2201CF73893006A9DD7 /* TransferItemsViewController.h */,
+				1929F2211CF73893006A9DD7 /* TransferItemsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -203,6 +232,9 @@
 		19E24B841CEB97F100DE36E0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1929F21B1CF70D9C006A9DD7 /* ItemsCollectionViewCell.h */,
+				1929F21C1CF70D9C006A9DD7 /* ItemsCollectionViewCell.m */,
+				1929F21E1CF70F3E006A9DD7 /* itemCollectionViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -275,12 +307,17 @@
 			files = (
 				19E24B7E1CEB974100DE36E0 /* scan.png in Resources */,
 				19E24B741CEB96B100DE36E0 /* profile@3x.png in Resources */,
+				1929F2241CF7448A006A9DD7 /* apple.png in Resources */,
+				1929F22C1CF74A97006A9DD7 /* sticker.png in Resources */,
+				1929F2261CF74A57006A9DD7 /* medal.png in Resources */,
 				19E24B691CEB963400DE36E0 /* Statistics@2x.png in Resources */,
 				19E24B6E1CEB965800DE36E0 /* home@2x.png in Resources */,
 				19E24B781CEB96C000DE36E0 /* profile@2x.png in Resources */,
 				19E24B701CEB966100DE36E0 /* home@3x.png in Resources */,
 				19E24B801CEB975000DE36E0 /* scan@2x.png in Resources */,
+				1929F21F1CF70F3E006A9DD7 /* itemCollectionViewCell.xib in Resources */,
 				19E24B821CEB975A00DE36E0 /* scan@3x.png in Resources */,
+				1929F22A1CF74A7C006A9DD7 /* cat sticker.png in Resources */,
 				19E24B681CEB963400DE36E0 /* Statistics.png in Resources */,
 				19E24B771CEB96C000DE36E0 /* map@2x.png in Resources */,
 				19E24B6C1CEB964F00DE36E0 /* home.png in Resources */,
@@ -290,6 +327,7 @@
 				19E24B5A1CEB93DB00DE36E0 /* Assets.xcassets in Resources */,
 				19E24B6A1CEB963400DE36E0 /* Statistics@3x.png in Resources */,
 				19E24B581CEB93DB00DE36E0 /* Main.storyboard in Resources */,
+				1929F2281CF74A6B006A9DD7 /* flower.png in Resources */,
 				19E24B7A1CEB96CD00DE36E0 /* profile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,10 +340,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				19C37EB61CED2972001EB2C0 /* RDCodeScannerView.m in Sources */,
+				1929F2221CF73893006A9DD7 /* TransferItemsViewController.m in Sources */,
 				19E24B961CEB98AC00DE36E0 /* LoginViewController.m in Sources */,
 				19E24B4F1CEB93DB00DE36E0 /* AppDelegate.m in Sources */,
 				19E24B8D1CEB981A00DE36E0 /* ScanViewController.m in Sources */,
 				19E24B9C1CEB993500DE36E0 /* StatisticsTableViewController.m in Sources */,
+				1929F21D1CF70D9C006A9DD7 /* ItemsCollectionViewCell.m in Sources */,
 				19E24B4C1CEB93DB00DE36E0 /* main.m in Sources */,
 				19E24B991CEB98B800DE36E0 /* RegisterViewController.m in Sources */,
 				19E24B8A1CEB980B00DE36E0 /* ProfileViewController.m in Sources */,

@@ -24,12 +24,18 @@
 #define LOCATIONDATA_UPDATE @"LocationDataUpdated"
 #define LOGS_UPDATED @"LogsUpdated"
 
+#define LOG_ADDED @"LogAdded"
+#define USERITEMS_UPDATED @"UseritemsUpdated"
+#define USERITEMS_ADDED @"UseritemsAdded"
+#define LOCATION_ITEMS_UPDATED @"LocationItemsUpdated"
+
+
 @property (nonatomic, strong) __block NSMutableDictionary * userdata;
 @property (nonatomic, copy) __block NSMutableArray * items;
 @property (nonatomic, copy) __block NSMutableArray * userItems;
 @property (nonatomic, copy) __block NSMutableArray * logs;
 @property (nonatomic, copy) __block NSMutableArray * locations;
-
+@property (nonatomic, copy) __block NSMutableArray * locationItems;
 
 +(instancetype)sharedInstance;
 
@@ -40,7 +46,17 @@
 - (void) updateItemsData;
 - (void) updateLogsData;
 - (void) updateLocationsData;
+- (void) updateUserItems;
+- (void) addDataToLogsForUserId: (NSNumber *) userid atLocationId: (NSNumber *) locationId;
 
+
+- (void) updateLocationItemsForLocation: (NSString *) locationId;
+- (void) setUserItemsNotAvailable: (NSString *) userItemId;
+- (void) setLocationItemAsNotAvilable: (NSString *) locationItemId;
+- (void) addItem:(NSString *) itemId toLocation: (NSString *) locationId;
+- (void) addItem: (NSString *) itemId toUser: (NSString *) userId;
+- (void) transferItem:(NSString *) userItemId ToLocation:(NSString *) locationId;
+- (void) transferItem:(NSString *) locationItemId ToUser:(NSString *) userId;
 
 
 @end

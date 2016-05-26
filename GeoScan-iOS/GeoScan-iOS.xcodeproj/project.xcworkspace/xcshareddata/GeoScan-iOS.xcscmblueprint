@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "12BEDF994A27D37E1E613351953724E6450C07BB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A106BC0C7ADBE3BE427EA7AC3875BAFB6130787D" : 0,
+    "12BEDF994A27D37E1E613351953724E6450C07BB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C6EF8A30-7CBF-4CAF-876E-93438C02376A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A106BC0C7ADBE3BE427EA7AC3875BAFB6130787D" : "GeoScan\/GeoScan-iOS\/GeoScan-iOS\/submodules\/QRCodeReaderViewController\/",
+    "12BEDF994A27D37E1E613351953724E6450C07BB" : "GeoScan\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GeoScan-iOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GeoScan-iOS\/GeoScan-iOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:StarbuckBG\/geoscan.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "12BEDF994A27D37E1E613351953724E6450C07BB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/YannickL\/QRCodeReaderViewController",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A106BC0C7ADBE3BE427EA7AC3875BAFB6130787D"
+    }
+  ]
+}
