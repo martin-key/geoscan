@@ -921,7 +921,7 @@
     <object type="LMREQUEST" id="z193">
         <attribute name="body" type="string">[{"data":{"json":"{\\"email\\":\\"martinkuvandzhiev@gmail.com\\",\\"password\\":\\"12348765\\",\\"username\\":\\"starbuck\\"}"},"identifier":"com.luckymarmot.JSONDynamicValue"}]</attribute>
         <attribute name="uuid" type="string">A80F03C4-ECFC-4C9A-95CB-92AF94A511A9</attribute>
-        <attribute name="url" type="string">http://rapiddevcrew.com/lumi_v2/register/</attribute>
+        <attribute name="url" type="string">https://rapiddevcrew.com/lumi_v2/register/</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
@@ -956,7 +956,7 @@
     </object>
     <object type="LMREQUEST" id="z199">
         <attribute name="uuid" type="string">F94FB904-CD9D-4ABF-9C4E-33736810ED52</attribute>
-        <attribute name="url" type="string">http://rapiddevcrew.com/lumi_v2/register/</attribute>
+        <attribute name="url" type="string">https://rapiddevcrew.com/lumi_v2/register/</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
@@ -980,7 +980,7 @@
     </object>
     <object type="LMREQUEST" id="z203">
         <attribute name="uuid" type="string">7A4AE7FE-081E-4C0A-B783-28016563E022</attribute>
-        <attribute name="url" type="string">http://rapiddevcrew.com/lumi_v2/</attribute>
+        <attribute name="url" type="string">https://rapiddevcrew.com/lumi_v2/</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
@@ -1035,7 +1035,7 @@
     </object>
     <object type="LMREQUEST" id="z210">
         <attribute name="uuid" type="string">B2A84408-5E64-487C-B88B-AFD98BA77583</attribute>
-        <attribute name="url" type="string">http://rapiddevcrew.com/lumi_v2/</attribute>
+        <attribute name="url" type="string">https://rapiddevcrew.com/lumi_v2/</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
@@ -1076,7 +1076,7 @@
     </object>
     <object type="LMREQUEST" id="z214">
         <attribute name="uuid" type="string">3F67D7B4-713C-4C30-BB75-2DDAF55616B0</attribute>
-        <attribute name="url" type="string">http://rapiddevcrew.com/lumi_v2/getPlaygrounds/</attribute>
+        <attribute name="url" type="string">https://rapiddevcrew.com/lumi_v2/getPlaygrounds/</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
@@ -1091,7 +1091,7 @@
     </object>
     <object type="LMREQUEST" id="z215">
         <attribute name="uuid" type="string">7499D443-EB36-431E-9604-A6FB86884F58</attribute>
-        <attribute name="url" type="string">http://rapiddevcrew.com/lumi_v2/</attribute>
+        <attribute name="url" type="string">https://rapiddevcrew.com/lumi_v2/</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
@@ -1147,7 +1147,7 @@
     </object>
     <object type="LMREQUEST" id="z222">
         <attribute name="uuid" type="string">981C6EB1-B48D-4E28-BE79-A8FC095928E1</attribute>
-        <attribute name="url" type="string">http://rapiddevcrew.com/lumi_v2/getAppliances/</attribute>
+        <attribute name="url" type="string">https://rapiddevcrew.com/lumi_v2/getAppliances/</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
@@ -1158,7 +1158,7 @@
         <attribute name="name" type="string">Get Appliances</attribute>
         <relationship name="parent" type="0/1" destination="LMREQUESTTREEITEM" idrefs="z194"></relationship>
         <relationship name="children" type="0/0" destination="LMREQUESTTREEITEM"></relationship>
-        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z220 z224"></relationship>
+        <relationship name="headers" type="0/0" destination="LMKEYVALUE" idrefs="z224 z220"></relationship>
     </object>
     <object type="LMENVIRONMENT" id="z223">
         <attribute name="uuid" type="string">43375245-42B2-4099-AEF6-CD5B7F3CF948</attribute>
@@ -1179,7 +1179,7 @@
     </object>
     <object type="LMREQUEST" id="z227">
         <attribute name="uuid" type="string">E8DF6987-15C5-4010-93E1-183EACD7C3A2</attribute>
-        <attribute name="url" type="string">http://rapiddevcrew.com/lumi_v2/getCompanies/</attribute>
+        <attribute name="url" type="string">https://rapiddevcrew.com/lumi_v2/getCompanies/</attribute>
         <attribute name="storecookies" type="bool">1</attribute>
         <attribute name="sendcookies" type="bool">1</attribute>
         <attribute name="redirectmethod" type="bool">0</attribute>
